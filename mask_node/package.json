@@ -3,9 +3,9 @@
     "version": "0.0.1",
     "description": "TensorFlow.js Object Detection model Node-RED node",
     "dependencies": {
-        "@tensorflow/tfjs-node": "1.4.0",
         "@microsoft/customvision-tfjs": "*",
-        "@tensorflow-models/coco-ssd": "*"
+        "@tensorflow-models/coco-ssd": "^2.1.0",
+        "@tensorflow/tfjs-node": "1.4.0"
     },
     "repository": {
         "type": "git",
@@ -35,10 +35,10 @@
         "Yi-Hong Wang (https://github.com/yhwang)"
     ],
     "devDependencies": {
-        "mocha": "^7.0.0",
-        "node-red": "^1.0.3",
-        "node-red-node-test-helper": "^0.2.3",
-        "standard": "^14.3.1"
+        "mocha": "^7.2.0",
+        "node-red": "^1.1.3",
+        "node-red-node-test-helper": "^0.2.5",
+        "standard": "^14.3.4"
     },
     "scripts": {
         "test": "standard && mocha \"test/**/*_spec.js\""

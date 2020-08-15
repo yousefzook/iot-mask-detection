@@ -1,0 +1,90 @@
+[
+    {
+        "id": "5d78b524.aa4b7c",
+        "type": "tab",
+        "label": "mask",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "7a4c5a48.f85104",
+        "type": "camera",
+        "z": "5d78b524.aa4b7c",
+        "name": "",
+        "x": 142.5,
+        "y": 380,
+        "wires": [
+            [
+                "6a47584b.518508",
+                "62b60cc8.66e334"
+            ]
+        ]
+    },
+    {
+        "id": "d0e95dbc.05c4",
+        "type": "play audio",
+        "z": "5d78b524.aa4b7c",
+        "name": "",
+        "voice": "1",
+        "x": 950,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "9ff3c46b.0d3a28",
+        "type": "debug",
+        "z": "5d78b524.aa4b7c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 950,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "6a47584b.518508",
+        "type": "image",
+        "z": "5d78b524.aa4b7c",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "x": 520,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "faab03b.e99d8",
+        "type": "fileinject",
+        "z": "5d78b524.aa4b7c",
+        "name": "",
+        "x": 160.5,
+        "y": 220,
+        "wires": [
+            [
+                "6a47584b.518508",
+                "62b60cc8.66e334"
+            ]
+        ]
+    },
+    {
+        "id": "62b60cc8.66e334",
+        "type": "mask-detection",
+        "z": "5d78b524.aa4b7c",
+        "name": "",
+        "modelUrl": "",
+        "x": 520,
+        "y": 220,
+        "wires": [
+            [
+                "9ff3c46b.0d3a28",
+                "d0e95dbc.05c4"
+            ]
+        ]
+    }
+]
