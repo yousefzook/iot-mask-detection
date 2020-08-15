@@ -1,0 +1,46 @@
+{
+    "name": "mask-detection",
+    "version": "0.0.1",
+    "description": "TensorFlow.js Object Detection model Node-RED node",
+    "dependencies": {
+        "@tensorflow/tfjs-node": "1.4.0",
+        "@microsoft/customvision-tfjs": "*",
+        "@tensorflow-models/coco-ssd": "*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/IBM/node-red-tensorflowjs"
+    },
+    "license": "Apache-2.0",
+    "keywords": [
+        "tensorflow.js",
+        "tensorflowjs",
+        "tensorflow",
+        "tf.js",
+        "tfjs",
+        "node-red",
+        "nodered",
+        "DL"
+    ],
+    "node-red": {
+        "nodes": {
+            "mask-detection": "node/mask-detection.js"
+        }
+    },
+    "contributors": [
+        "Paul Van Eck (https://github.com/pvaneck)",
+        "Ted Chang (https://github.com/tedhtchang)",
+        "Ton Ngo (https://github.com/tonanhngo)",
+        "va barbosa (https://github.com/vabarbosa/)",
+        "Yi-Hong Wang (https://github.com/yhwang)"
+    ],
+    "devDependencies": {
+        "mocha": "^7.0.0",
+        "node-red": "^1.0.3",
+        "node-red-node-test-helper": "^0.2.3",
+        "standard": "^14.3.1"
+    },
+    "scripts": {
+        "test": "standard && mocha \"test/**/*_spec.js\""
+    }
+}
